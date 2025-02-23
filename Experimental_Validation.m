@@ -1,0 +1,16 @@
+%Do not trigger all the graphs lest you flood your desktop with tabs
+close all
+%graphOutput('0cm.json')
+graphOutput('1cm.json')
+%graphOutput('2cm.json')
+%graphOutput('3cm.json')
+%graphOutput('5cm.json')
+%graphOutput('10cm.json')
+%graphOutput('15cm.json')
+%graphOutput('25cm.json')
+%graphOutput('38cm.json')
+graphOutput('50cm.json')
+%graphOutput('75cm.json')
+%graphOutput('100cm.json')
+%graphOutput('150cm.json')
+graphOutput('200cm.json')

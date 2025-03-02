@@ -1,0 +1,31 @@
+* C:\Users\hibin\Documents\SPICE\Amplifier.asc
+C1 N001 N003 50n
+V1 +9V 0 9
+V2 0 -9V 9
+C2 +9V 0 .1µ
+C3 0 -9V .1µ
+V3 Vin N002 SINE(0 10n 50) AC 0 0 Rser=13.25
+R1 0 SigIn 10 tol=20
+R2 Sig- 0 10 tol=20
+XX1 REF refamp197
+XU1 SigIn Sig- +9V -9V VOut REF N001 N003 INA848
+C4 Vin SigIn 1500µ V=10 Irms=715m Rser=0.093 Lser=29.9n mfg="Würth Elektronik" pn="860020274017 WCAP-ATG5 8x20" type="Al electrolytic"
+C5 Sig- N002 1500µ V=10 Irms=715m Rser=0.093 Lser=29.9n mfg="Würth Elektronik" pn="860020274017 WCAP-ATG5 8x20" type="Al electrolytic"
+
+* block symbol definitions
+.subckt refamp197 5V
+V1 5V 0 5
+R1 5V N001 100k
+R2 N001 0 100k
+C1 N001 0 1µ
+XU1 N001 Out 5V 0 Out OPAx197
+.ends refamp197
+
+* .tran 0 1 50u 1u
+.noise V(VOut) V3 dec 10 .1 1000
+* .meas TRAN Vpp PP V(Vout) FROM 100u TO 250m
+* .ac dec 10 .1 1000
+.lib C:\Users\hibin\Documents\SPICE\INA848.LIB
+.lib C:\Users\hibin\Documents\SPICE\OPAx197.LIB
+.backanno
+.end

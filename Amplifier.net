@@ -1,0 +1,39 @@
+* C:\Users\bismi\OneDrive\Documents\LTspice\SPICEV2\Amplifier.asc
+C1 N002 N004 50n
+V1 +9V 0 18 AC 50m
+V2 0 -9V 18 AC 50m
+C2 +9V 0 .1µ
+C3 0 -9V .1µ
+V3 Vin N003 SINE(0 10n 50) AC 0 0 Rser=13.25
+R1 0 SigIn 10 tol=1
+R2 Sig- 0 10 tol=1
+XX1 REF refamp197
+C4 Vin SigIn 1500µ V=10 Irms=715m Rser=0.093 Lser=29.9n mfg="Würth Elektronik" pn="860020274017 WCAP-ATG5 8x20" type="Al electrolytic"
+C5 Sig- N003 1500µ V=10 Irms=715m Rser=0.093 Lser=29.9n mfg="Würth Elektronik" pn="860020274017 WCAP-ATG5 8x20" type="Al electrolytic"
+XU2 SigIn Sig- +9V -9V VOut REF N002 N004 INA848
+L1 N001 0 37.766n Rser=1.3256
+L2 ADOUT 0 37.017n Rser=0.63631
+R3 ADOUT 0 10Meg
+C6 N001 VOut .1µ
+
+* block symbol definitions
+.subckt refamp197 Out
+V1 5V 0 5 AC 50m
+R1 5V N001 100k
+R2 N001 0 100k
+C1 N001 0 1µ
+C2 Out 0 100p
+C3 5V 0 .1µ
+XU2 N001 Out 5V 0 Out OPAx197
+.ends refamp197
+
+.tran 0 1 10m 1u
+* .noise V(VOut) V3 dec 10 .1 1000
+.meas TRAN VppTrans PP V(Vadout) FROM 50m TO 100m
+* .ac dec 10 .1 1000
+K L1 L2 0.99003
+.meas TRAN VppAmp PP V(Vout) FROM 50m TO 100m
+.lib C:\Users\bismi\OneDrive\Documents\LTspice\SPICEV2\INA848.LIB
+.lib C:\Users\bismi\OneDrive\Documents\LTspice\SPICEV2\OPAx197.LIB
+.backanno
+.end

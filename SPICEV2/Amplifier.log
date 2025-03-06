@@ -1,0 +1,215 @@
+LTspice 24.0.9 for Windows
+Circuit: * C:\Users\bismi\OneDrive\Documents\LTspice\SPICEV2\Amplifier.asc
+Start Time: Wed Mar  5 22:23:38 2025
+solver = Normal
+Maximum thread count: 16
+tnom = 27
+temp = 27
+method = modified trap
+c4: Increased Cpar to 1.5e-09
+c5: Increased Cpar to 1.5e-09
+WARNING: Node N003 is floating.
+
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+Gmin = 1.07374
+vernier = 0.5
+vernier = 0.25
+vernier = 0.125
+vernier = 0.0625
+vernier = 0.03125
+Gmin = 1.00965
+vernier = 0.015625
+vernier = 0.0078125
+vernier = 0.00390625
+vernier = 0.00195312
+Gmin = 1.00719
+vernier = 0.00260417
+vernier = 0.00347222
+vernier = 0.00173611
+Gmin = 1.00153
+vernier = 0.000868055
+vernier = 0.000434028
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 7.57576%
+Source Step = 9.10275%
+Source Step = 9.13234%
+Source Step = 9.16193%
+Source Step = 9.19152%
+Source Step = 9.22112%
+Source Step = 9.25071%
+vernier = 0.00146484
+Source Step = 9.28918%
+Source Step = 9.33357%
+Source Step = 9.37796%
+Source Step = 9.42235%
+Source Step = 9.46674%
+vernier = 0.00219727
+Source Step = 9.52222%
+Source Step = 9.58881%
+Source Step = 9.65539%
+Source Step = 9.72198%
+Source Step = 9.78856%
+vernier = 0.0032959
+Source Step = 9.86846%
+Source Step = 9.96834%
+Source Step = 10.0682%
+Source Step = 10.1681%
+Source Step = 10.268%
+vernier = 0.00494385
+Source Step = 10.3828%
+Source Step = 10.5326%
+Source Step = 10.6824%
+Source Step = 10.8323%
+Source Step = 10.9821%
+vernier = 0.00741577
+Source Step = 11.1469%
+Source Step = 11.3716%
+Source Step = 11.5963%
+Source Step = 11.821%
+Source Step = 12.0458%
+vernier = 0.0111237
+Source Step = 12.2817%
+Source Step = 12.6188%
+Source Step = 12.9559%
+Source Step = 13.2929%
+Source Step = 13.63%
+Source Step = 13.9671%
+vernier = 0.0166855
+Source Step = 14.4727%
+Source Step = 14.9784%
+Source Step = 15.484%
+Source Step = 15.9896%
+Source Step = 16.4952%
+vernier = 0.0250282
+Source Step = 17.2284%
+Source Step = 17.9868%
+Source Step = 18.7452%
+Source Step = 19.5037%
+Source Step = 20.2621%
+vernier = 0.0375423
+Source Step = 21.3239%
+Source Step = 22.4615%
+Source Step = 23.5992%
+Source Step = 24.7368%
+Source Step = 25.8745%
+vernier = 0.0563135
+Source Step = 27.4103%
+Source Step = 29.1168%
+Source Step = 30.8232%
+Source Step = 32.5297%
+Source Step = 34.2362%
+vernier = 0.0844703
+Source Step = 36.4546%
+Source Step = 39.0143%
+Source Step = 41.574%
+Source Step = 44.1337%
+Source Step = 46.6934%
+vernier = 0.126705
+Source Step = 49.893%
+Source Step = 53.7326%
+Source Step = 57.5722%
+Source Step = 61.4117%
+Source Step = 65.2513%
+vernier = 0.190058
+Source Step = 69.8587%
+Source Step = 75.6181%
+Source Step = 81.3774%
+Source Step = 87.1368%
+Source Step = 92.8961%
+vernier = 0.0475145
+Source Step = 92.4461%
+Source Step = 92.5361%
+Source Step = 92.6261%
+Source Step = 92.7161%
+Source Step = 92.8061%
+Source Step = 92.8961%
+Source Step = 92.9861%
+Source Step = 93.0761%
+Source Step = 93.1661%
+Source Step = 93.2561%
+Starting source stepping with srcstepmethod=1
+Source Step = 3.0303%
+vernier = 0.25
+Source Step = 0.0828598%
+Source Step = 0.201231%
+Source Step = 0.319602%
+Source Step = 0.437973%
+Source Step = 0.556345%
+vernier = 0.00585938
+Source Step = 0.710227%
+Source Step = 0.887784%
+Source Step = 1.06534%
+Source Step = 1.2429%
+Source Step = 1.42045%
+vernier = 0.00878906
+Source Step = 1.6424%
+Source Step = 1.90874%
+Source Step = 2.17507%
+Source Step = 2.44141%
+Source Step = 2.70774%
+vernier = 0.0131836
+Source Step = 3.02734%
+Source Step = 3.42685%
+Source Step = 3.82635%
+Source Step = 4.22585%
+Source Step = 4.62536%
+vernier = 0.0197754
+Source Step = 5.08478%
+Source Step = 5.68404%
+Source Step = 6.28329%
+Source Step = 6.88255%
+Source Step = 7.4818%
+vernier = 0.0296631
+Source Step = 8.14098%
+Source Step = 9.03986%
+Source Step = 9.93874%
+Source Step = 10.8376%
+Source Step = 11.7365%
+vernier = 0.0444946
+Source Step = 12.6803%
+Source Step = 14.0287%
+Source Step = 15.377%
+Source Step = 16.7253%
+Source Step = 18.0736%
+Source Step = 19.4219%
+vernier = 0.0667419
+Source Step = 21.4444%
+Source Step = 23.4669%
+Source Step = 25.4894%
+Source Step = 27.5119%
+Source Step = 29.5344%
+vernier = 0.100113
+Source Step = 32.467%
+Source Step = 35.5007%
+Source Step = 38.5344%
+Source Step = 41.5681%
+Source Step = 44.6019%
+vernier = 0.150169
+Source Step = 48.8491%
+Source Step = 53.3997%
+Source Step = 57.9502%
+Source Step = 62.5008%
+Source Step = 67.0514%
+vernier = 0.225254
+Source Step = 73.1947%
+Source Step = 80.0206%
+Source Step = 86.8465%
+Source Step = 93.6724%
+Source Step = 94.3683%
+Source stepping failed
+
+Pseudo Transient succeeded in finding the operating point at 7.25928 s.
+
+
+Measurement "vpptrans" FAIL'ed
+vppamp: PP(v(vout))=2.36034e-05 FROM 0.05 TO 0.1
+
+Total elapsed time: 125.930 seconds.
+
